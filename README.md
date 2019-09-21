@@ -23,6 +23,11 @@ authentication and database included.
 * on `firebase init` mark: firestore and hosting. do not overwrite `public/index.html` 
 * add script to **package.json**: `deploy: firebase deploy`
 
+### 3.
+* On firebase console go to **Authentication** > Set up sign in methods, and enable google provider
+* `npm install react-with-firebase-auth`
+* add firebase authentication HOC (see `firebase.app.ts`);
+
 ## Resources
 * [A Firebase in React Tutorial for Beginners](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial#firebase-in-react-setup)
 

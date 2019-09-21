@@ -1,9 +1,27 @@
 import React from 'react';
+import {withAuth} from '../firebase.app';
+import {User} from 'firebase';
 
-const Home: React.FC = () => {
+interface IProps {
+  user?: User | undefined;
+  signOut: () => void;
+  signInWithGoogle: () => void;
+}
+
+const Home: React.FC<IProps> = ({user, signOut, signInWithGoogle}) => {
   return (
-    <div>Home</div>
+    <div>
+      {
+        (user)
+          ? <p>
+              Hello {user.displayName}
+              <img src={user.photoURL as string} alt=""/>
+              <button onClick={signOut}>Logout</button>
+            </p>
+          : <button onClick={signInWithGoogle}>Login with Google</button>
+      }
+    </div>
   );
 };
 
-export default Home;
+export default withAuth(Home);
