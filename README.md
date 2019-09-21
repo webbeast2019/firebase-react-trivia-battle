@@ -1,5 +1,21 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# About this project
+This is demo for creating react app with firebase as backend,
+authentication and database included.
+
+## Step by step
+### 1. Build basic routes
+* `npm install react-router-dom`
+* `npm install @types/react-router-dom -D`
+* add routes file: `src/constants/routes`
+* add basic pages
+
+## Resources
+
+
+# Create-react-app auto generated docs
+
 ## Available Scripts
 
 In the project directory, you can run:
