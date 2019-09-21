@@ -11,8 +11,20 @@ authentication and database included.
 * add routes file: `src/constants/routes`
 * add basic pages
 
-## Resources
+### 2. Add firebase
+* `npm install firebase`
+* `npm install -g firebase-tools`
+* login to firebase and go to console
+* add new project
+* go to setting icon > project setting
+* select location for your project
+* select: **add app > web**
+* follow firebase wizard steps. Since we're using react, no need to add the script manually as suggested in the wizard
+* on `firebase init` mark: firestore and hosting. do not overwrite `public/index.html` 
+* add script to **package.json**: `deploy: firebase deploy`
 
+## Resources
+* [A Firebase in React Tutorial for Beginners](https://www.robinwieruch.de/complete-firebase-authentication-react-tutorial#firebase-in-react-setup)
 
 # Create-react-app auto generated docs
 
